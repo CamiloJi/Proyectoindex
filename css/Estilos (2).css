@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box; /* AQUI INDICAMOS LA MEDIDA DE EL ELEMENTO */
+}
+
+
+body{
+    font-family:Verdana; /*AQUI DEFINIMOS EL TIPO DE FUENTE QUE QUEREMOS UTILIZAR*/ 
+    margin: 0;
+} /*AQUI UTILIZAMOS LA MEDIDA EN EL CAMPO DE TIPOGRAFIA*/
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.5em;} 
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{ /*AQUI DAMOS FORMA Y ESTILO A EL BOTON*/
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 7px 12px;
+    border-radius: 9px;
+    border: rgb(0,0,0,5);
+    box-shadow:  2px 2px 10px rgb(0,0,0,5);
+    color: white;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+
+button:hover{ /*AQUI NOS PERMITE UN SEGUNDO ESTADO EN EL BOTON, EN ESTE CASO AL PASAR EL CURSO POR EL BOTON*/
+    background-color:white;
+}
+
+.container{ /*AQUI LLAMAMOS UN CAMPO PARA LIMITE DE PIXELES EN MARGEN*/
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{ /*MODIFICAMOS EL COLOR FONDO DEL ENCABEZADO*/
+    background-color: rgb(240, 235, 235);
+     
+}
+
+header .logo{ /*MODIFICAMOS EL CONTENIDO DENTRO DEL ENCABEZADO*/
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet; 
+    font-size: 1.60em;
+}
+
+header .container{ /*MODIFICAMOS EL CONTENIDO CENTRAL*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav{ /*AQUI MODIFICAMOS AL OBJETO SELECCIONADO*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{ /*AQUI DAMOS ESTILO AL OBJETO SELECCIONADO*/
+    padding: 3px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; 
+}
+
+header a:hover{ /*NOS PERMITE UN SEGUNDO ESTADO EN EL OBJETO SELECCIONADO, EN ESTE CASO AL PASAR EL CURSO POR EL OBJETO*/
+    color: blueviolet;
+}
+
+#banner{ /*MODIFICAMOS EL "banner" EN ESTE CASO EL FONDO AGREGANDOLE FORMA Y FILTROS*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 85vh;
+    color: white; 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) ,url("/img/fondopro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+     
+
+}
+
+#banner h1{ /* MODIFICAMOS EL COLOR DEL "banner"*/
+    color: white;
+}
+
+
+#image .container{ /*MODIFICAMOS LA MEDIDA DE LA IMAGEN*/
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas{ /*AGREGAMOS COLOR A UNA BARRA EN LA PAGINA*/
+    background-color: rgb(30,30,30);
+    color: white;
+}
+
+#caracteristicas .container{ /*MODIFICAMOS EL TEXTO DE EL OBJETO SELECCIONADO*/
+    text-align: center;
+}
+
+#caracteristicas .container{ /*MODIFICAMOS LA MEDIDA DE EL OBJETO SELECCIONADO*/
+    text-align: center;
+    padding: 5px;
+
+}
+
+#caracteristicas li{ /*MODIFICAMOS LA MEDIDA DE EL OBJETO SELECCIONADO*/
+    margin: 15px 0px;
+    font-weight: bold ;
+}
+
+ /*ESPECIFICAMOS Y EDITAMOS LOS MEDIOS EN LA HOJA DE ESTILO*/
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+}
+
+    header .container{ /*MODIFICAMOS LA MEDIDA DE EL OBJETO SELECCIONADO*/
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+header nav{  /*MODIFICAMOS EN SEGUNDO ESTADO*/
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+footer{ /*DA COLOR AL PIE DE PAGINA*/
+    background-color: white;
+}
+footer p{ /*MODIFICA Y DA SEGUNDO COLOR A PIE DE PAGINA*/
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .contenedor{ /*MODIFICA PIE DE PAGINA*/
+    height: 120px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.container li{ /*DECLARA ELEMENTO*/
+     list-style: none;
+     list-style: none;
+}
+
+
+
+
